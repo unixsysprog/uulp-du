@@ -1,0 +1,22 @@
+DU (1)
+
+NAME
+    du - summarize disk usage for each directory recursively
+
+SYNOPSIS
+    ./du [-k] file...
+	
+DESCRIPTION
+	du cycles through the chosen directory recursively and reports the number of blocks used by each subdirectory.
+	
+OPTIONS
+    -k
+	    reports number of 1024-byte blocks used. Default is 512-byte blocks.
+
+BUGS
+    1. Passing in -k arg without specifying a directory will result in ENOENT
+		
+AUTHOR
+    Written by Colten Sullivent
+	
+DU (1)
